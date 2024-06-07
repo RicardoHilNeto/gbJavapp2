@@ -56,6 +56,11 @@ public class menuSelection_GUI extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
         jLabel5.setText("                     Donate");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 200, 70));
 
         jLabel6.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
@@ -96,6 +101,11 @@ public class menuSelection_GUI extends javax.swing.JFrame {
         dispose();
         new menuRivers_GUI().setVisible(true);
     }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        dispose();
+        new menuDonate_GUI().setVisible(true);
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
      * @param args the command line arguments

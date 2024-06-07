@@ -15,8 +15,8 @@ public class dataBase {
     }
     
      public static void Rivers() {
-        rivers.add(new dbRivers("Peruibe", "embalagens", 8.0));
-        rivers.add(new dbRivers("Copacabana", "turistas", 8.1));
-        rivers.add(new dbRivers("Jericoacoara", "restos de alimentos", 8.2));
+        rivers.add(new dbRivers("Tietê", "embalagens", 8.0));
+        rivers.add(new dbRivers("Macaé", "turistas", 8.1));
+        rivers.add(new dbRivers("Pinheiros", "restos de alimentos", 8.2));
     }
 }
