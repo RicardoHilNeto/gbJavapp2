@@ -62,6 +62,7 @@ public class menuBeaches extends javax.swing.JFrame {
         namebeache3_txt = new javax.swing.JLabel();
         contaminantesbeache3_txt = new javax.swing.JLabel();
         phbeache3_txt = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -105,11 +106,24 @@ public class menuBeaches extends javax.swing.JFrame {
         phbeache3_txt.setText("null");
         getContentPane().add(phbeache3_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 50, 60));
 
+        jButton1.setText("Back to menu");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 130, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/bar.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
+        new menuSelection_GUI().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,6 +164,7 @@ public class menuBeaches extends javax.swing.JFrame {
     private javax.swing.JLabel contaminantesbeache1_txt;
     private javax.swing.JLabel contaminantesbeache2_txt;
     private javax.swing.JLabel contaminantesbeache3_txt;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

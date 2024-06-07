@@ -30,7 +30,6 @@ public class menuInicial_GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         password_txt = new javax.swing.JPasswordField();
-        username_txt = new javax.swing.JTextField();
         email_txt = new javax.swing.JTextField();
         btnsend = new javax.swing.JButton();
         btnregister = new javax.swing.JButton();
@@ -39,7 +38,6 @@ public class menuInicial_GUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(password_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 280, 30));
-        getContentPane().add(username_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 280, 30));
         getContentPane().add(email_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 280, 30));
 
         btnsend.setBackground(new java.awt.Color(66, 176, 245));
@@ -59,7 +57,7 @@ public class menuInicial_GUI extends javax.swing.JFrame {
         });
         getContentPane().add(btnregister, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 180, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/cadastro.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/login.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
@@ -123,6 +121,5 @@ if (username != null) {
     public static javax.swing.JTextField email_txt;
     private javax.swing.JLabel jLabel1;
     public static javax.swing.JPasswordField password_txt;
-    public static javax.swing.JTextField username_txt;
     // End of variables declaration//GEN-END:variables
 }

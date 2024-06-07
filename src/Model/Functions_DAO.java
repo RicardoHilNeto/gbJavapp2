@@ -37,14 +37,13 @@ public class Functions_DAO {
         }
     }
 
-    // Method to add a user to the ArrayList
     public static void storeUser(String name, String password, String email) {
         if (name.isEmpty() || password.isEmpty() || email.isEmpty()) {
             System.out.println("Please fill in all fields.");
             return;
         }
 
-        users.add(new User(name, password, email));
+        users.add(new User(name, email, password));
     }
 
     public static String validateUser(String emailInput, String passwordInput) {
@@ -57,10 +56,7 @@ public class Functions_DAO {
             }
         }
 
-        return null; // Returns null if the user is not found
+        return null; 
     }
 
-    public static void showUsers() {
-        users.forEach(user -> System.out.println("Name: " + user.getName() + ", Email: " + user.getEmail()));
-    }
 }

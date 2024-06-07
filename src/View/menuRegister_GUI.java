@@ -49,7 +49,7 @@ public class menuRegister_GUI extends javax.swing.JFrame {
         });
         getContentPane().add(btnsend, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 200, 50));
 
-        btnback.setText("Back to menu");
+        btnback.setText("Back");
         btnback.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbackActionPerformed(evt);
