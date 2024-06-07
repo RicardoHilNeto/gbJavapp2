@@ -60,6 +60,11 @@ public class menuSelection_GUI extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
         jLabel6.setText("                     River");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 200, 70));
 
         jLabel7.setFont(new java.awt.Font("Sitka Subheading", 1, 18)); // NOI18N
@@ -86,6 +91,11 @@ public class menuSelection_GUI extends javax.swing.JFrame {
         dispose();
         new menuBeaches().setVisible(true);
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        dispose();
+        new menuRivers_GUI().setVisible(true);
+    }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
      * @param args the command line arguments
